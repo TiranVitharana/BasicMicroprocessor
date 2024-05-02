@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu May  2 16:49:16 2024
+# Process ID: 21356
+# Current directory: D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13356 D:\NanoProcessor Final\NanoProcessor - Code Crafters\NanoProcessor\NanoProcessor\NanoProcessor.xpr
+# Log file: D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/vivado.log
+# Journal file: D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+source TB_Microprocessor.tcl

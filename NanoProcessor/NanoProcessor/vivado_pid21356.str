@@ -1,0 +1,162 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 21356
+License: Customer
+
+Current time: 	Thu May 02 16:49:28 IST 2024
+Time zone: 	India Standard Time (Asia/Colombo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 13 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Softwares/Vivado/Vivado/2018.1/tps/win64/jre
+Java executable location: 	D:/Softwares/Vivado/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	USER
+User home directory: C:/Users/tiran
+User working directory: D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Softwares/Vivado/Vivado
+HDI_APPROOT: D:/Softwares/Vivado/Vivado/2018.1
+RDI_DATADIR: D:/Softwares/Vivado/Vivado/2018.1/data
+RDI_BINDIR: D:/Softwares/Vivado/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/tiran/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/tiran/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/tiran/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	D:/Softwares/Vivado/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/vivado.log
+Vivado journal file location: 	D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/vivado.jou
+Engine tmp dir: 	D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/.Xil/Vivado-21356-Tiran
+
+GUI allocated memory:	273 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 659 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\NanoProcessor Final\NanoProcessor - Code Crafters\NanoProcessor\NanoProcessor\NanoProcessor.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.xpr} 
+// [GUI Memory]: 55 MB (+55169kb) [00:00:04]
+// [Engine Memory]: 549 MB (+424593kb) [00:00:04]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/NanoProcessor Final/NanoProcessor- Final Implement/NanoProcessor/NanoProcessor' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Softwares/Vivado/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 71 MB (+14037kb) [00:00:06]
+// [Engine Memory]: 614 MB (+38946kb) [00:00:06]
+// [Engine Memory]: 650 MB (+5362kb) [00:00:07]
+// [GUI Memory]: 79 MB (+4991kb) [00:00:07]
+// Project name: NanoProcessor; location: D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor; part: xc7a35tcpg236-1
+// HMemoryUtils.trashcanNow. Engine heap size: 675 MB. GUI used memory: 39 MB. Current time: 5/2/24 4:49:29 PM IST
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, NanoProcessor(Behavioral) (NanoProcessor.vhd)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, NanoProcessor(Behavioral) (NanoProcessor.vhd), RegisterBank : Register_Bank(Behavioral) (Register_Bank.vhd)]", 2, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'TB_Microprocessor' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "TB_Microprocessor_behav -key {Behavioral:sim_1:Functional:TB_Microprocessor} -tclbatch {TB_Microprocessor.tcl} -view {{D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 84 MB (+227kb) [00:00:21]
+// [Engine Memory]: 691 MB (+9447kb) [00:00:21]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 693 MB. GUI used memory: 47 MB. Current time: 5/2/24 4:49:42 PM IST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config {D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg} 
+// Tcl Message: source TB_Microprocessor.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Microprocessor_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 4 seconds
+dismissDialog("Run Simulation"); // e (ch)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(RDIResource.RDIViews_WAVEFORM_VIEWER, "TB_Microprocessor_behav1.wcfg"); // aw (aE, ch)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// RDIResource.RDIViews_WAVEFORM_VIEWER: TB_Microprocessor_behav1.wcfg: float view
+// HMemoryUtils.trashcanNow. Engine heap size: 694 MB. GUI used memory: 64 MB. Current time: 5/2/24 4:49:44 PM IST
+maximizeFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "TB_Microprocessor_behav1.wcfg"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, aG)
+// [GUI Memory]: 92 MB (+3968kb) [00:00:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 702 MB. GUI used memory: 51 MB. Current time: 5/2/24 4:49:50 PM IST
