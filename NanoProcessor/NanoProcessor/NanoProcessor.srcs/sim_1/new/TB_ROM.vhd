@@ -38,11 +38,11 @@ end TB_ROM;
 architecture Behavioral of TB_ROM is
 component ROM
 Port ( address : in STD_LOGIC_VECTOR (2 downto 0);
-       data : out STD_LOGIC_VECTOR (11 downto 0));
+       data : out STD_LOGIC_VECTOR (12 downto 0));
 end component;
 
 SIGNAL address : std_logic_vector(2 downto 0);
-SIGNAL data : STD_LOGIC_VECTOR (11 downto 0);
+SIGNAL data : STD_LOGIC_VECTOR (12 downto 0);
 
 begin
 uut: ROM port map(

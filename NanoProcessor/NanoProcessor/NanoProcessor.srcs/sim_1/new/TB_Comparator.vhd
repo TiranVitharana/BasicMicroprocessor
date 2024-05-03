@@ -40,27 +40,25 @@ architecture Behavioral of TB_Comparator is
 component Comparator is
     Port ( input1 : in STD_LOGIC_VECTOR(3 downto 0);
            input2 : in STD_LOGIC_VECTOR(3 downto 0);
-           CompEN : in STD_LOGIC;
            output : out STD_LOGIC_VECTOR (3 downto 0));
            
 end component ;
 
 signal input1 , input2 : STD_LOGIC_VECTOR(3 downto 0);
 signal output : STD_LOGIC_VECTOR(3 downto 0);
-signal CompEN : STD_LOGIC;
+
 
 begin
 
 UUT : Comparator port map(
+    
     input1 => input1,
     input2 => input2,
-    output => output,
-    CompEN =>CompEN
-);
+    output => output
+    );
 
 process 
 begin
-    CompEN <= '1';
     input1 <= "0110";
     input2 <= "0001";
     wait for 100ns;

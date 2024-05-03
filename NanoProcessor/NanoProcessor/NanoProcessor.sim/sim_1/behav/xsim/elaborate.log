@@ -1,6 +1,6 @@
 Vivado Simulator 2018.1
 Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
-Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_MUX_2_to_1_3bit_behav xil_defaultlib.TB_MUX_2_to_1_3bit -log elaborate.log 
+Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Comparator_behav xil_defaultlib.TB_Comparator -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration

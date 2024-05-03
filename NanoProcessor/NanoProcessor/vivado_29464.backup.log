@@ -1,0 +1,468 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri May  3 12:54:20 2024
+# Process ID: 29464
+# Current directory: D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2728 D:\Academic\Microprocessor - CodeCrafters\NanoProcessor\NanoProcessor\NanoProcessor.xpr
+# Log file: D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/vivado.log
+# Journal file: D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_MUX_2_to_1_4_bit.vhd', nor could it be found using path 'C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_MUX_2_to_1_4_bit.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Softwares/Vivado/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 877.910 ; gain = 142.672
+update_compile_order -fileset sources_1
+set_property top adder_3_bit [current_fileset]
+update_compile_order -fileset sources_1
+set_property top TB_Adder_3_bit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Adder_3_bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_Adder_3_bit_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/adder_3_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder_3_bit
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_Adder_3_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_Adder_3_bit
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Adder_3_bit_behav xil_defaultlib.TB_Adder_3_bit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_3_bit [adder_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_adder_3_bit
+Built simulation snapshot TB_Adder_3_bit_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Adder_3_bit_behav -key {Behavioral:sim_1:Functional:TB_Adder_3_bit} -tclbatch {TB_Adder_3_bit.tcl} -view {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+WARNING: Simulation object /TB_Microprocessor/Clk was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/Reset was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/Zero was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/Overflow was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/Reg7_Seg was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/Reg_7_Out was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/InstructionBus was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/RegCheckforJmp was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/RegisterEnable was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/LoadSelect was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/ImmediateValue was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/RegisterSelect was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/Add_SubSelection was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/JumpFlag was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/RCAEN was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/CompEN was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/JumpAddress was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/InstructionDecoder/RegisterSelect2 was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/ProgramCounter/Reset was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/ProgramCounter/Clk was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/ProgramCounter/D was not found in the design.
+WARNING: Simulation object /TB_Microprocessor/UUT/ProgramCounter/memory_select was not found in the design.
+source TB_Adder_3_bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Adder_3_bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 928.086 ; gain = 17.422
+save_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Adder_3_bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_Adder_3_bit_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Adder_3_bit_behav xil_defaultlib.TB_Adder_3_bit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Adder_3_bit_behav -key {Behavioral:sim_1:Functional:TB_Adder_3_bit} -tclbatch {TB_Adder_3_bit.tcl} -view {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+source TB_Adder_3_bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Adder_3_bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+save_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Adder_3_bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_Adder_3_bit_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Adder_3_bit_behav xil_defaultlib.TB_Adder_3_bit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Adder_3_bit_behav -key {Behavioral:sim_1:Functional:TB_Adder_3_bit} -tclbatch {TB_Adder_3_bit.tcl} -view {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+source TB_Adder_3_bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Adder_3_bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+export_ip_user_files -of_objects  [get_files {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_MUX_2_to_1_4_bit.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_MUX_2_to_1_4_bit.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_MUX_4_to_1_4bit.vhd}}
+update_compile_order -fileset sim_1
+set_property top TB_MUX_4_to_1_4bit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top MUX_4_to_1_4bit [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_MUX_4_to_1_4bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_MUX_4_to_1_4bit_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_4_to_1_4_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4_to_1_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_MUX_4_to_1_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_MUX_4_to_1_4bit
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_MUX_4_to_1_4bit_behav xil_defaultlib.TB_MUX_4_to_1_4bit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4_to_1_4bit [mux_4_to_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_mux_4_to_1_4bit
+Built simulation snapshot TB_MUX_4_to_1_4bit_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_MUX_4_to_1_4bit_behav -key {Behavioral:sim_1:Functional:TB_MUX_4_to_1_4bit} -tclbatch {TB_MUX_4_to_1_4bit.tcl} -view {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+WARNING: Simulation object /TB_Adder_3_bit/A was not found in the design.
+WARNING: Simulation object /TB_Adder_3_bit/S was not found in the design.
+WARNING: Simulation object /TB_Adder_3_bit/UUT/FA_0/C_out was not found in the design.
+source TB_MUX_4_to_1_4bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_MUX_4_to_1_4bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+save_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_MUX_4_to_1_4bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_MUX_4_to_1_4bit_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_MUX_4_to_1_4bit_behav xil_defaultlib.TB_MUX_4_to_1_4bit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_MUX_4_to_1_4bit_behav -key {Behavioral:sim_1:Functional:TB_MUX_4_to_1_4bit} -tclbatch {TB_MUX_4_to_1_4bit.tcl} -view {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+source TB_MUX_4_to_1_4bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_MUX_4_to_1_4bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top TB_MUX_2_to_1_3_bit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top MUX_2_to_1_3bit [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property top TB_MUX_2_to_1_3bit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_MUX_2_to_1_3bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_MUX_2_to_1_3bit_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_2_to_1_3_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2_to_1_3bit
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sim_1/new/TB_MUX_2_to_1_3_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_MUX_2_to_1_3bit
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_MUX_2_to_1_3bit_behav xil_defaultlib.TB_MUX_2_to_1_3bit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2_to_1_3bit [mux_2_to_1_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_mux_2_to_1_3bit
+Built simulation snapshot TB_MUX_2_to_1_3bit_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_MUX_2_to_1_3bit_behav -key {Behavioral:sim_1:Functional:TB_MUX_2_to_1_3bit} -tclbatch {TB_MUX_2_to_1_3bit.tcl} -view {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+WARNING: Simulation object /TB_MUX_4_to_1_4bit/A was not found in the design.
+WARNING: Simulation object /TB_MUX_4_to_1_4bit/M was not found in the design.
+WARNING: Simulation object /TB_MUX_4_to_1_4bit/I was not found in the design.
+WARNING: Simulation object /TB_MUX_4_to_1_4bit/LoadSel was not found in the design.
+WARNING: Simulation object /TB_MUX_4_to_1_4bit/S_out was not found in the design.
+source TB_MUX_2_to_1_3bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_MUX_2_to_1_3bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+save_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_MUX_2_to_1_3bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_MUX_2_to_1_3bit_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Softwares/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 077b93c6ecce45ecbfaafd4afad2a3ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_MUX_2_to_1_3bit_behav xil_defaultlib.TB_MUX_2_to_1_3bit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_MUX_2_to_1_3bit_behav -key {Behavioral:sim_1:Functional:TB_MUX_2_to_1_3bit} -tclbatch {TB_MUX_2_to_1_3bit.tcl} -view {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/TB_Microprocessor_behav1.wcfg}
+source TB_MUX_2_to_1_3bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_MUX_2_to_1_3bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top NanoProcessor [current_fileset]
+update_compile_order -fileset sources_1
+set_property top TB_Microprocessor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri May  3 13:26:04 2024] Launched synth_1...
+Run output will be captured here: D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.runs/synth_1/runme.log
+[Fri May  3 13:26:04 2024] Launched impl_1...
+Run output will be captured here: D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1821.289 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1821.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1904.949 ; gain = 904.148
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_5
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  3 14:11:54 2024...
