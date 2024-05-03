@@ -69,12 +69,12 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.cache/wt [current_project]
-  set_property parent.project_path C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.xpr [current_project]
+  set_property webtalk.parent_dir {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.cache/wt} [current_project]
+  set_property parent.project_path {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.xpr} [current_project]
   set_property ip_output_repo {{D:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.runs/synth_1/NanoProcessor.dcp
-  read_xdc C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/Basys.xdc
+  add_files -quiet {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.runs/synth_1/NanoProcessor.dcp}}
+  read_xdc {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/Basys.xdc}}
   link_design -top NanoProcessor -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

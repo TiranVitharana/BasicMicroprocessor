@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Fri May  3 01:22:15 2024
+| Date             : Fri May  3 13:27:27 2024
 | Host             : Tiran running 64-bit major release  (build 9200)
 | Command          : report_power -file NanoProcessor_power_routed.rpt -pb NanoProcessor_power_summary_routed.pb -rpx NanoProcessor_power_routed.rpx
 | Design           : NanoProcessor
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.079        |
+| Total On-Chip Power (W)  | 0.077        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.007        |
+| Dynamic (W)              | 0.005        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      196 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       62 |     20800 |            0.30 |
+| Slice Logic    |    <0.001 |      220 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       68 |     20800 |            0.33 |
+|   Register     |    <0.001 |       88 |     41600 |            0.21 |
 |   CARRY4       |    <0.001 |       12 |      8150 |            0.15 |
-|   Register     |    <0.001 |       67 |     41600 |            0.16 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        8 |     32600 |            0.02 |
-|   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |    <0.001 |      126 |       --- |             --- |
-| I/O            |     0.006 |       19 |       106 |           17.92 |
+|   F7/F8 Muxes  |    <0.001 |        6 |     32600 |            0.02 |
+|   Others       |     0.000 |       12 |       --- |             --- |
+| Signals        |    <0.001 |      162 |       --- |             --- |
+| I/O            |     0.003 |       19 |       106 |           17.92 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.079 |          |           |                 |
+| Total          |     0.077 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |
+| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,22 +139,28 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------------+-----------+
-| Name                 | Power (W) |
-+----------------------+-----------+
-| NanoProcessor        |     0.007 |
-|   InstructionDecoder |    <0.001 |
-|   MUX_4bit           |    <0.001 |
-|   ProgramCounter     |    <0.001 |
-|     D_FF0            |    <0.001 |
-|     D_FF1            |    <0.001 |
-|     D_FF2            |    <0.001 |
-|   RegisterBank       |    <0.001 |
-|     Reg_1            |    <0.001 |
-|     Reg_2            |    <0.001 |
-|     Reg_6            |    <0.001 |
-|     Reg_7            |    <0.001 |
-|   SlowClk            |    <0.001 |
-+----------------------+-----------+
++------------------------+-----------+
+| Name                   | Power (W) |
++------------------------+-----------+
+| NanoProcessor          |     0.005 |
+|   InstructionDecoder   |    <0.001 |
+|   ProgramCounter       |    <0.001 |
+|     D_FF0              |    <0.001 |
+|     D_FF1              |    <0.001 |
+|     D_FF2              |    <0.001 |
+|   RegisterBank         |    <0.001 |
+|     Decoder_3_to_8_0   |    <0.001 |
+|       Decoder_2_to_4_0 |    <0.001 |
+|       Decoder_2_to_4_1 |    <0.001 |
+|     Reg_0              |    <0.001 |
+|     Reg_1              |    <0.001 |
+|     Reg_2              |    <0.001 |
+|     Reg_3              |    <0.001 |
+|     Reg_4              |    <0.001 |
+|     Reg_5              |    <0.001 |
+|     Reg_6              |    <0.001 |
+|     Reg_7              |    <0.001 |
+|   SlowClk              |    <0.001 |
++------------------------+-----------+
 
 

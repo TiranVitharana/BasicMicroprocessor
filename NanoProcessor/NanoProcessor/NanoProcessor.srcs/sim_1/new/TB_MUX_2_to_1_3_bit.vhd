@@ -31,13 +31,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity TB_MUX_2_to_1_3_bit is
+entity TB_MUX_2_to_1_3bit is
 --  Port ( );
-end TB_MUX_2_to_1_3_bit;
+end TB_MUX_2_to_1_3bit;
 
-architecture Behavioral of TB_MUX_2_to_1_3_bit is
+architecture Behavioral of TB_MUX_2_to_1_3bit is
 
-component MUX_2_to_1_3_bit Port(
+component MUX_2_to_1_3bit Port(
            J : in STD_LOGIC_VECTOR (2 downto 0);
            A : in STD_LOGIC_VECTOR (2 downto 0);
            JmpF : in STD_LOGIC;
@@ -49,7 +49,7 @@ SIGNAL JmpF : std_logic;
 
 begin
 
-UUT : MUX_2_way_3_bit Port map(
+UUT : MUX_2_to_1_3bit Port map(
            J => J,
            A => A,
            JmpF => JmpF,

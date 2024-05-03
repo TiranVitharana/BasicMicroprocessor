@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Fri May  3 01:22:15 2024
+| Date         : Fri May  3 13:27:27 2024
 | Host         : Tiran running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file NanoProcessor_timing_summary_routed.rpt -pb NanoProcessor_timing_summary_routed.pb -rpx NanoProcessor_timing_summary_routed.rpx -warn_on_violation
 | Design       : NanoProcessor
@@ -52,13 +52,13 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 13 register/latch pins with no clock driven by root clock pin: ProgramCounter/D_FF0/Q_reg/Q (HIGH)
+ There are 16 register/latch pins with no clock driven by root clock pin: ProgramCounter/D_FF0/Q_reg/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: ProgramCounter/D_FF1/Q_reg/Q (HIGH)
+ There are 16 register/latch pins with no clock driven by root clock pin: ProgramCounter/D_FF1/Q_reg/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: ProgramCounter/D_FF2/Q_reg/Q (HIGH)
+ There are 16 register/latch pins with no clock driven by root clock pin: ProgramCounter/D_FF2/Q_reg/Q (HIGH)
 
- There are 19 register/latch pins with no clock driven by root clock pin: SlowClk/Clk_out_reg/Q (HIGH)
+ There are 38 register/latch pins with no clock driven by root clock pin: SlowClk/Clk_out_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -73,7 +73,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 65 pins that are not constrained for maximum delay. (HIGH)
+ There are 124 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -222,7 +222,7 @@ Slack (MET) :             5.770ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -248,7 +248,7 @@ Slack (MET) :             5.770ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.444    14.785    SlowClk/Clk
     SLICE_X36Y42         FDSE                                         r  SlowClk/count_reg[0]/C
                          clock pessimism              0.275    15.060    
@@ -288,7 +288,7 @@ Slack (MET) :             5.770ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -314,7 +314,7 @@ Slack (MET) :             5.770ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.444    14.785    SlowClk/Clk
     SLICE_X36Y42         FDRE                                         r  SlowClk/count_reg[1]/C
                          clock pessimism              0.275    15.060    
@@ -354,7 +354,7 @@ Slack (MET) :             5.770ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -380,7 +380,7 @@ Slack (MET) :             5.770ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.444    14.785    SlowClk/Clk
     SLICE_X36Y42         FDRE                                         r  SlowClk/count_reg[2]/C
                          clock pessimism              0.275    15.060    
@@ -420,7 +420,7 @@ Slack (MET) :             5.770ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -446,7 +446,7 @@ Slack (MET) :             5.770ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.444    14.785    SlowClk/Clk
     SLICE_X36Y42         FDRE                                         r  SlowClk/count_reg[3]/C
                          clock pessimism              0.275    15.060    
@@ -486,7 +486,7 @@ Slack (MET) :             5.912ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -512,7 +512,7 @@ Slack (MET) :             5.912ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.445    14.786    SlowClk/Clk
     SLICE_X36Y43         FDRE                                         r  SlowClk/count_reg[4]/C
                          clock pessimism              0.275    15.061    
@@ -552,7 +552,7 @@ Slack (MET) :             5.912ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -578,7 +578,7 @@ Slack (MET) :             5.912ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.445    14.786    SlowClk/Clk
     SLICE_X36Y43         FDRE                                         r  SlowClk/count_reg[5]/C
                          clock pessimism              0.275    15.061    
@@ -618,7 +618,7 @@ Slack (MET) :             5.912ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -644,7 +644,7 @@ Slack (MET) :             5.912ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.445    14.786    SlowClk/Clk
     SLICE_X36Y43         FDRE                                         r  SlowClk/count_reg[6]/C
                          clock pessimism              0.275    15.061    
@@ -684,7 +684,7 @@ Slack (MET) :             5.912ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -710,7 +710,7 @@ Slack (MET) :             5.912ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.445    14.786    SlowClk/Clk
     SLICE_X36Y43         FDRE                                         r  SlowClk/count_reg[7]/C
                          clock pessimism              0.275    15.061    
@@ -750,7 +750,7 @@ Slack (MET) :             6.083ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -776,7 +776,7 @@ Slack (MET) :             6.083ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.446    14.787    SlowClk/Clk
     SLICE_X36Y47         FDRE                                         r  SlowClk/count_reg[20]/C
                          clock pessimism              0.275    15.062    
@@ -816,7 +816,7 @@ Slack (MET) :             6.083ns  (required time - arrival time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.565     5.086    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[10]/C
   -------------------------------------------------------------------    -------------------
@@ -842,7 +842,7 @@ Slack (MET) :             6.083ns  (required time - arrival time)
                          net (fo=0)                   0.000    10.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          1.446    14.787    SlowClk/Clk
     SLICE_X36Y47         FDRE                                         r  SlowClk/count_reg[21]/C
                          clock pessimism              0.275    15.062    
@@ -883,7 +883,7 @@ Slack (MET) :             0.330ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.564     1.447    SlowClk/Clk
     SLICE_X36Y47         FDRE                                         r  SlowClk/count_reg[23]/C
   -------------------------------------------------------------------    -------------------
@@ -901,7 +901,7 @@ Slack (MET) :             0.330ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.833     1.960    SlowClk/Clk
     SLICE_X36Y47         FDRE                                         r  SlowClk/count_reg[23]/C
                          clock pessimism             -0.513     1.447    
@@ -935,7 +935,7 @@ Slack (MET) :             0.330ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.564     1.447    SlowClk/Clk
     SLICE_X36Y48         FDRE                                         r  SlowClk/count_reg[27]/C
   -------------------------------------------------------------------    -------------------
@@ -953,7 +953,7 @@ Slack (MET) :             0.330ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.833     1.960    SlowClk/Clk
     SLICE_X36Y48         FDRE                                         r  SlowClk/count_reg[27]/C
                          clock pessimism             -0.513     1.447    
@@ -987,7 +987,7 @@ Slack (MET) :             0.336ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.562     1.445    SlowClk/Clk
     SLICE_X36Y42         FDSE                                         r  SlowClk/count_reg[0]/C
   -------------------------------------------------------------------    -------------------
@@ -1007,7 +1007,7 @@ Slack (MET) :             0.336ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.831     1.958    SlowClk/Clk
     SLICE_X36Y42         FDSE                                         r  SlowClk/count_reg[0]/C
                          clock pessimism             -0.513     1.445    
@@ -1041,7 +1041,7 @@ Slack (MET) :             0.337ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.563     1.446    SlowClk/Clk
     SLICE_X36Y43         FDRE                                         r  SlowClk/count_reg[4]/C
   -------------------------------------------------------------------    -------------------
@@ -1059,7 +1059,7 @@ Slack (MET) :             0.337ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.832     1.959    SlowClk/Clk
     SLICE_X36Y43         FDRE                                         r  SlowClk/count_reg[4]/C
                          clock pessimism             -0.513     1.446    
@@ -1093,7 +1093,7 @@ Slack (MET) :             0.338ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.563     1.446    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[8]/C
   -------------------------------------------------------------------    -------------------
@@ -1111,7 +1111,7 @@ Slack (MET) :             0.338ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.832     1.959    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[8]/C
                          clock pessimism             -0.513     1.446    
@@ -1145,7 +1145,7 @@ Slack (MET) :             0.339ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.563     1.446    SlowClk/Clk
     SLICE_X36Y45         FDRE                                         r  SlowClk/count_reg[12]/C
   -------------------------------------------------------------------    -------------------
@@ -1163,7 +1163,7 @@ Slack (MET) :             0.339ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.832     1.959    SlowClk/Clk
     SLICE_X36Y45         FDRE                                         r  SlowClk/count_reg[12]/C
                          clock pessimism             -0.513     1.446    
@@ -1197,7 +1197,7 @@ Slack (MET) :             0.339ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.563     1.446    SlowClk/Clk
     SLICE_X36Y46         FDRE                                         r  SlowClk/count_reg[16]/C
   -------------------------------------------------------------------    -------------------
@@ -1215,7 +1215,7 @@ Slack (MET) :             0.339ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.832     1.959    SlowClk/Clk
     SLICE_X36Y46         FDRE                                         r  SlowClk/count_reg[16]/C
                          clock pessimism             -0.513     1.446    
@@ -1249,7 +1249,7 @@ Slack (MET) :             0.339ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.563     1.446    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[11]/C
   -------------------------------------------------------------------    -------------------
@@ -1267,7 +1267,7 @@ Slack (MET) :             0.339ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.832     1.959    SlowClk/Clk
     SLICE_X36Y44         FDRE                                         r  SlowClk/count_reg[11]/C
                          clock pessimism             -0.513     1.446    
@@ -1301,7 +1301,7 @@ Slack (MET) :             0.339ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.562     1.445    SlowClk/Clk
     SLICE_X36Y42         FDRE                                         r  SlowClk/count_reg[3]/C
   -------------------------------------------------------------------    -------------------
@@ -1319,7 +1319,7 @@ Slack (MET) :             0.339ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.831     1.958    SlowClk/Clk
     SLICE_X36Y42         FDRE                                         r  SlowClk/count_reg[3]/C
                          clock pessimism             -0.513     1.445    
@@ -1353,7 +1353,7 @@ Slack (MET) :             0.340ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.564     1.447    SlowClk/Clk
     SLICE_X36Y48         FDRE                                         r  SlowClk/count_reg[24]/C
   -------------------------------------------------------------------    -------------------
@@ -1371,7 +1371,7 @@ Slack (MET) :             0.340ns  (arrival time - required time)
                          net (fo=0)                   0.000     0.000    Clk
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    Clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
                          net (fo=34, routed)          0.833     1.960    SlowClk/Clk
     SLICE_X36Y48         FDRE                                         r  SlowClk/count_reg[24]/C
                          clock pessimism             -0.513     1.447    
@@ -1394,8 +1394,9 @@ Period(ns):         10.000
 Sources:            { Clk }
 
 Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
-Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  Clk_IBUF_BUFG_inst/I
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y1  Clk_IBUF_BUFG_inst/I
 Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X38Y46   SlowClk/Clk_out_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X38Y46   SlowClk/clk_status_reg/C
 Min Period        n/a     FDSE/C   n/a            1.000         10.000      9.000      SLICE_X36Y42   SlowClk/count_reg[0]/C
 Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X36Y44   SlowClk/count_reg[10]/C
 Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X36Y44   SlowClk/count_reg[11]/C
@@ -1403,8 +1404,8 @@ Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.00
 Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X36Y45   SlowClk/count_reg[13]/C
 Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X36Y45   SlowClk/count_reg[14]/C
 Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X36Y45   SlowClk/count_reg[15]/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X36Y46   SlowClk/count_reg[16]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X38Y46   SlowClk/Clk_out_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X38Y46   SlowClk/clk_status_reg/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y44   SlowClk/count_reg[10]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y44   SlowClk/count_reg[11]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y45   SlowClk/count_reg[12]/C
@@ -1413,8 +1414,8 @@ Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.50
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y45   SlowClk/count_reg[15]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y46   SlowClk/count_reg[16]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y46   SlowClk/count_reg[17]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y46   SlowClk/count_reg[18]/C
 High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X38Y46   SlowClk/Clk_out_reg/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X38Y46   SlowClk/clk_status_reg/C
 High Pulse Width  Slow    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X36Y42   SlowClk/count_reg[0]/C
 High Pulse Width  Fast    FDSE/C   n/a            0.500         5.000       4.500      SLICE_X36Y42   SlowClk/count_reg[0]/C
 High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y44   SlowClk/count_reg[10]/C
@@ -1423,7 +1424,6 @@ High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.50
 High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y45   SlowClk/count_reg[13]/C
 High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y45   SlowClk/count_reg[14]/C
 High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y45   SlowClk/count_reg[15]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y46   SlowClk/count_reg[16]/C
 
 
 

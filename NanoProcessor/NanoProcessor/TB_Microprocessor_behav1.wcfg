@@ -3,110 +3,36 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="TB_Microprocessor_behav.wdb" id="1">
+      <db_ref path="TB_MUX_2_to_1_3bit_behav.wdb" id="1">
          <top_modules>
-            <top_module name="TB_Microprocessor" />
+            <top_module name="TB_MUX_2_to_1_3bit" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="674167417fs"></ZoomEndTime>
-      <Cursor1Time time="420342000fs"></Cursor1Time>
+      <ZoomEndTime time="2523113820fs"></ZoomEndTime>
+      <Cursor1Time time="474654000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="108"></NameColumnWidth>
+      <NameColumnWidth column_width="92"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="22" />
-   <wvobject fp_name="/TB_Microprocessor/Clk" type="logic">
-      <obj_property name="ElementShortName">Clk</obj_property>
-      <obj_property name="ObjectShortName">Clk</obj_property>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/TB_MUX_2_to_1_3bit/J" type="array">
+      <obj_property name="ElementShortName">J[2:0]</obj_property>
+      <obj_property name="ObjectShortName">J[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/Reset" type="logic">
-      <obj_property name="ElementShortName">Reset</obj_property>
-      <obj_property name="ObjectShortName">Reset</obj_property>
+   <wvobject fp_name="/TB_MUX_2_to_1_3bit/A" type="array">
+      <obj_property name="ElementShortName">A[2:0]</obj_property>
+      <obj_property name="ObjectShortName">A[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/Zero" type="logic">
-      <obj_property name="ElementShortName">Zero</obj_property>
-      <obj_property name="ObjectShortName">Zero</obj_property>
+   <wvobject fp_name="/TB_MUX_2_to_1_3bit/JmpF" type="logic">
+      <obj_property name="ElementShortName">JmpF</obj_property>
+      <obj_property name="ObjectShortName">JmpF</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/Overflow" type="logic">
-      <obj_property name="ElementShortName">Overflow</obj_property>
-      <obj_property name="ObjectShortName">Overflow</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/Reg7_Seg" type="array">
-      <obj_property name="ElementShortName">Reg7_Seg[6:0]</obj_property>
-      <obj_property name="ObjectShortName">Reg7_Seg[6:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/Reg_7_Out" type="array">
-      <obj_property name="ElementShortName">Reg_7_Out[3:0]</obj_property>
-      <obj_property name="ObjectShortName">Reg_7_Out[3:0]</obj_property>
-      <obj_property name="CustomSignalColor">#FF0000</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/InstructionBus" type="array">
-      <obj_property name="ElementShortName">InstructionBus[12:0]</obj_property>
-      <obj_property name="ObjectShortName">InstructionBus[12:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/RegCheckforJmp" type="array">
-      <obj_property name="ElementShortName">RegCheckforJmp[3:0]</obj_property>
-      <obj_property name="ObjectShortName">RegCheckforJmp[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/RegisterEnable" type="array">
-      <obj_property name="ElementShortName">RegisterEnable[2:0]</obj_property>
-      <obj_property name="ObjectShortName">RegisterEnable[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/LoadSelect" type="array">
-      <obj_property name="ElementShortName">LoadSelect[1:0]</obj_property>
-      <obj_property name="ObjectShortName">LoadSelect[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/ImmediateValue" type="array">
-      <obj_property name="ElementShortName">ImmediateValue[3:0]</obj_property>
-      <obj_property name="ObjectShortName">ImmediateValue[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/RegisterSelect" type="array">
-      <obj_property name="ElementShortName">RegisterSelect[2:0]</obj_property>
-      <obj_property name="ObjectShortName">RegisterSelect[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/Add_SubSelection" type="logic">
-      <obj_property name="ElementShortName">Add_SubSelection</obj_property>
-      <obj_property name="ObjectShortName">Add_SubSelection</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/JumpFlag" type="logic">
-      <obj_property name="ElementShortName">JumpFlag</obj_property>
-      <obj_property name="ObjectShortName">JumpFlag</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/RCAEN" type="logic">
-      <obj_property name="ElementShortName">RCAEN</obj_property>
-      <obj_property name="ObjectShortName">RCAEN</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/CompEN" type="logic">
-      <obj_property name="ElementShortName">CompEN</obj_property>
-      <obj_property name="ObjectShortName">CompEN</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/JumpAddress" type="array">
-      <obj_property name="ElementShortName">JumpAddress[2:0]</obj_property>
-      <obj_property name="ObjectShortName">JumpAddress[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/InstructionDecoder/RegisterSelect2" type="array">
-      <obj_property name="ElementShortName">RegisterSelect2[2:0]</obj_property>
-      <obj_property name="ObjectShortName">RegisterSelect2[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/ProgramCounter/Reset" type="logic">
-      <obj_property name="ElementShortName">Reset</obj_property>
-      <obj_property name="ObjectShortName">Reset</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/ProgramCounter/Clk" type="logic">
-      <obj_property name="ElementShortName">Clk</obj_property>
-      <obj_property name="ObjectShortName">Clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/ProgramCounter/D" type="array">
-      <obj_property name="ElementShortName">D[2:0]</obj_property>
-      <obj_property name="ObjectShortName">D[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Microprocessor/UUT/ProgramCounter/memory_select" type="array">
-      <obj_property name="ElementShortName">memory_select[2:0]</obj_property>
-      <obj_property name="ObjectShortName">memory_select[2:0]</obj_property>
+   <wvobject fp_name="/TB_MUX_2_to_1_3bit/S_out" type="array">
+      <obj_property name="ElementShortName">S_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S_out[2:0]</obj_property>
    </wvobject>
 </wave_config>

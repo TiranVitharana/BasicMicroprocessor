@@ -21,33 +21,33 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.cache/wt [current_project]
-set_property parent.project_path C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.xpr [current_project]
+set_property webtalk.parent_dir {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.cache/wt} [current_project]
+set_property parent.project_path {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo {d:/NanoProcessor Final/NanoProcessor - Code Crafters/NanoProcessor/NanoProcessor/NanoProcessor.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Adder_Subtractor_4bit.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Comparator.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/D_FF.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/Decoder_2_to_4.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/Decoder_3_to_8.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/FA.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/HA.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Instruction_Decoder.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/LUT_16_7.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_2_to_1_3_bit.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_4_to_1_4_bit.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_8_to_1_4_bit.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Program_Counter.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/ROM.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/Reg.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Register_Bank.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/Slow_clk.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/adder_3_bit.vhd
-  C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/NanoProcessor.vhd
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Adder_Subtractor_4bit.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Comparator.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/D_FF.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/Decoder_2_to_4.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/Decoder_3_to_8.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/FA.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/HA.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Instruction_Decoder.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/LUT_16_7.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_2_to_1_3_bit.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_4_to_1_4_bit.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/MUX_8_to_1_4_bit.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Program_Counter.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/ROM.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/Reg.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/Register_Bank.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/Import/Slow_clk.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/adder_3_bit.vhd}
+  {D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/NanoProcessor.srcs/sources_1/new/NanoProcessor.vhd}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -57,8 +57,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/Basys.xdc
-set_property used_in_implementation false [get_files C:/Users/tiran/Downloads/Basic_Microprocessor-master/NanoProcessor/NanoProcessor/Basys.xdc]
+read_xdc {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/Basys.xdc}}
+set_property used_in_implementation false [get_files {{D:/Academic/Microprocessor - CodeCrafters/NanoProcessor/NanoProcessor/Basys.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
